@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="User_list1" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="36b72102-59d7-4a3d-b552-e58bc26ab408">
+	<property name="ireport.zoom" value="1.9487171000000019"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     user_signup.`user_id` AS user_signup_user_id,
+     user_signup.`First_name` AS user_signup_First_name,
+     user_signup.`Last_name` AS user_signup_Last_name,
+     user_signup.`Email_Id` AS user_signup_Email_Id,
+     user_signup.`Password` AS user_signup_Password,
+     user_signup.`Confirm_password` AS user_signup_Confirm_password
+FROM
+     `user_signup` user_signup]]>
+	</queryString>
+	<field name="user_signup_user_id" class="java.lang.Integer"/>
+	<field name="user_signup_First_name" class="java.lang.String"/>
+	<field name="user_signup_Last_name" class="java.lang.String"/>
+	<field name="user_signup_Email_Id" class="java.lang.String"/>
+	<field name="user_signup_Password" class="java.lang.String"/>
+	<field name="user_signup_Confirm_password" class="java.lang.String"/>
+	<group name="user_signup_user_id">
+		<groupExpression><![CDATA[$F{user_signup_user_id}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="399" y="21" width="133" height="42" uuid="e1f06b6e-4a9b-4fc8-be89-deb459fe8663"/>
+				<textElement>
+					<font size="26" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[User List]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="133" height="20" uuid="5133c0c0-2c06-452f-a4c8-518fe52f6a25"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[User id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="133" y="0" width="133" height="20" uuid="550d3088-44a4-4029-9edb-728c2440d01a"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[First name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="266" y="0" width="133" height="20" uuid="e4be4f0e-fe97-4399-86a6-32e8188e315b"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Last name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="399" y="0" width="133" height="20" uuid="cbdf927e-ace8-4cc7-b6ae-07af8db51394"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Email Id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="532" y="0" width="133" height="20" uuid="0410fdde-a878-4828-b829-ba81a171cd57"/>
+				<textElement textAlignment="Center">
+					<font size="14" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Password]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="665" y="0" width="133" height="20" uuid="0bdce2e5-b63c-4408-a4a3-374c7d8d754d"/>
+				<textElement textAlignment="Right">
+					<font size="14" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Confirm password]]></text>
+			</staticText>
+			<line>
+				<reportElement x="21499" y="112" width="100" height="1" uuid="c8b01bb7-015c-44ea-85dd-c44055f2bb09"/>
+			</line>
+			<line>
+				<reportElement x="0" y="32" width="802" height="1" uuid="0489a2c2-d078-412b-a07e-b4a0065cbf60"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="34" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="133" height="20" uuid="1706443e-0cb5-48eb-8f03-cd6db3578f4e"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{user_signup_user_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="133" y="0" width="133" height="20" uuid="ceff39ef-d3b6-43b2-8299-d4a3155b30f2"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{user_signup_First_name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="266" y="0" width="133" height="20" uuid="f1fc2265-cda3-4f3b-9489-c2057eed98be"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{user_signup_Last_name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="399" y="0" width="133" height="20" uuid="7cba49c6-0f2e-4d12-bd36-fd62994032d9"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{user_signup_Email_Id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="532" y="0" width="133" height="20" uuid="f0f19e22-2bb0-4a64-85f5-4a960b91bd64"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{user_signup_Password}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="665" y="0" width="133" height="20" uuid="30f0ae12-7fa1-4cea-9002-af3bdf51b949"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{user_signup_Confirm_password}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="12" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="9" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="14" splitType="Stretch"/>
+	</summary>
+</jasperReport>

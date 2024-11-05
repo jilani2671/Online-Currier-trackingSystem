@@ -1,0 +1,67 @@
+/* 
+    Document   : ordertrackings
+    Created on : 26 Jan, 2023, 10:02:03 AM
+    Author     : vaishnavi
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+ 
+ root { 
+    display: block;
+}
+
+body
+{
+    background-color:pink;
+}
+
+.div1
+{
+    height: 90px;
+    width: 120px;
+    margin-top: 300px;
+    background-image: url('../images/8.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+} 
+
+
+.div2
+{
+    height: 90px;
+    width: 120px;
+    margin-top: 300px;
+     background-image: url('../images/9.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+} 
+
+
+
+.div3
+{
+    height: 90px;
+    width: 120px;
+    margin-top: 300px;
+    background-image: url('../images/7.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+} 
+
+
+.div4
+{
+    height: 90px;
+    width: 120px;
+    margin-top: 300px;
+    background-image: url('../images/11.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+} 
+
+
+
+.date{
+    font-size: 20px;
+}

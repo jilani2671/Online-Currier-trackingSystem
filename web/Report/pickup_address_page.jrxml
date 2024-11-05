@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="pickup_address_page" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="57e8fcc5-3874-446f-952d-49f110bcc64c">
+	<property name="ireport.zoom" value="1.6105100000000008"/>
+	<property name="ireport.x" value="238"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     pickup_address_page.`a_id` AS pickup_address_page_a_id,
+     pickup_address_page.`user_id` AS pickup_address_page_user_id,
+     pickup_address_page.`Email_ID` AS pickup_address_page_Email_ID,
+     pickup_address_page.`reciever_name` AS pickup_address_page_reciever_name,
+     pickup_address_page.`Receiver_Email` AS pickup_address_page_Receiver_Email,
+     pickup_address_page.`Consignment_No` AS pickup_address_page_Consignment_No,
+     pickup_address_page.`Name_person` AS pickup_address_page_Name_person,
+     pickup_address_page.`Address_Line1` AS pickup_address_page_Address_Line1,
+     pickup_address_page.`Address_Line2` AS pickup_address_page_Address_Line2,
+     pickup_address_page.`Pin_Code` AS pickup_address_page_Pin_Code,
+     pickup_address_page.`City` AS pickup_address_page_City,
+     pickup_address_page.`state` AS pickup_address_page_state,
+     pickup_address_page.`Country` AS pickup_address_page_Country
+FROM
+     `pickup_address_page` pickup_address_page]]>
+	</queryString>
+	<field name="pickup_address_page_a_id" class="java.lang.Integer"/>
+	<field name="pickup_address_page_user_id" class="java.lang.Integer"/>
+	<field name="pickup_address_page_Email_ID" class="java.lang.String"/>
+	<field name="pickup_address_page_reciever_name" class="java.lang.String"/>
+	<field name="pickup_address_page_Receiver_Email" class="java.lang.String"/>
+	<field name="pickup_address_page_Consignment_No" class="java.lang.String"/>
+	<field name="pickup_address_page_Name_person" class="java.lang.String"/>
+	<field name="pickup_address_page_Address_Line1" class="java.lang.String"/>
+	<field name="pickup_address_page_Pin_Code" class="java.lang.String"/>
+	<group name="pickup_address_page_a_id">
+		<groupExpression><![CDATA[$F{pickup_address_page_a_id}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="115" splitType="Stretch">
+			<staticText>
+				<reportElement x="242" y="30" width="186" height="39" uuid="08836957-94e4-49c1-8be1-1468da86a4ee"/>
+				<textElement>
+					<font size="16" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Pickup Address Details]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="84" width="801" height="1" uuid="90944646-fe99-451b-bee3-0be0f9f15498"/>
+			</line>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="89" height="20" uuid="41103a0c-822c-4637-ab78-6d3d07ce853e"/>
+				<textElement>
+					<font size="12" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="89" y="0" width="89" height="20" uuid="9844611c-507c-4b56-9792-3f405fab66da"/>
+				<textElement>
+					<font size="12" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[User Id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="178" y="0" width="89" height="20" uuid="dad712bd-5eba-4964-baaa-dff24edc5ae8"/>
+				<textElement>
+					<font size="12" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Email Id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="267" y="0" width="89" height="20" uuid="e2224a8f-6ee1-4931-8812-1e2a7ecabb2a"/>
+				<textElement>
+					<font size="12" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="356" y="0" width="89" height="20" uuid="0cccc73b-c013-487f-8575-f81bbb5bd177"/>
+				<textElement>
+					<font size="12" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Email]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="428" y="0" width="106" height="20" uuid="d578cd88-55f9-4485-8f04-45657db8cabf"/>
+				<textElement>
+					<font size="12" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Consignment_No]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="534" y="0" width="89" height="20" uuid="85f30241-e4ce-4e2c-9ea8-5dcb4afb2cee"/>
+				<textElement>
+					<font size="12" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Name person]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="623" y="0" width="89" height="20" uuid="83855426-f968-4e80-a3ef-1014ce4cf4fc"/>
+				<textElement>
+					<font size="12" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Address]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="712" y="0" width="89" height="20" uuid="a77e753e-7d19-4588-9f24-9536bafa05a7"/>
+				<textElement>
+					<font size="12" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Pin Code]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="36" width="802" height="1" uuid="9176c93f-d9fc-41b2-89e8-0c2889152790"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="59" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="89" height="20" uuid="71d1e37a-3de0-4d7b-ac7d-adc81344a041"/>
+				<textFieldExpression><![CDATA[$F{pickup_address_page_a_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="89" y="0" width="89" height="20" uuid="a8848392-72ef-4933-834a-e17379d32b46"/>
+				<textFieldExpression><![CDATA[$F{pickup_address_page_user_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="178" y="0" width="89" height="20" uuid="40a9cf4b-a157-4900-8c6d-efb36fcac22f"/>
+				<textFieldExpression><![CDATA[$F{pickup_address_page_Email_ID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="267" y="0" width="89" height="20" uuid="71047527-7b9c-4a6d-8bce-409c0c665804"/>
+				<textFieldExpression><![CDATA[$F{pickup_address_page_reciever_name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="356" y="0" width="89" height="20" uuid="7916200f-2fc8-40ac-a74a-692ab525bd04"/>
+				<textFieldExpression><![CDATA[$F{pickup_address_page_Receiver_Email}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="445" y="0" width="89" height="20" uuid="295caa6a-9e33-44e6-9882-4625d2450d1f"/>
+				<textFieldExpression><![CDATA[$F{pickup_address_page_Consignment_No}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="534" y="0" width="89" height="20" uuid="c35d3765-9346-45be-ac19-2c4f95622fd6"/>
+				<textFieldExpression><![CDATA[$F{pickup_address_page_Name_person}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="623" y="0" width="89" height="20" uuid="5c7ea206-4e5e-48b6-a9f2-c139e2950f09"/>
+				<textFieldExpression><![CDATA[$F{pickup_address_page_Address_Line1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="712" y="0" width="89" height="20" uuid="9c51d48d-b240-47e5-a996-04ce37282b47"/>
+				<textFieldExpression><![CDATA[$F{pickup_address_page_Pin_Code}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

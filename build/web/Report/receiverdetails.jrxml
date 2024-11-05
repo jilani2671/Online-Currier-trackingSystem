@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="receiverdetails" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="6798e0c4-aecd-4294-ad21-7ad97069f61c">
+	<property name="ireport.zoom" value="1.4641000000000006"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     user_receiverdetails.`r_id` AS user_receiverdetails_r_id,
+     user_receiverdetails.`user_id` AS user_receiverdetails_user_id,
+     user_receiverdetails.`Email_Id` AS user_receiverdetails_Email_Id,
+     user_receiverdetails.`Receiver_Name` AS user_receiverdetails_Receiver_Name,
+     user_receiverdetails.`Receiver_Email` AS user_receiverdetails_Receiver_Email,
+     user_receiverdetails.`phone_No` AS user_receiverdetails_phone_No,
+     user_receiverdetails.`Address` AS user_receiverdetails_Address,
+     user_receiverdetails.`City` AS user_receiverdetails_City,
+     user_receiverdetails.`Pin_code` AS user_receiverdetails_Pin_code,
+     user_receiverdetails.`state` AS user_receiverdetails_state,
+     user_receiverdetails.`Country` AS user_receiverdetails_Country
+FROM
+     `user_receiverdetails` user_receiverdetails]]>
+	</queryString>
+	<field name="user_receiverdetails_r_id" class="java.lang.Integer"/>
+	<field name="user_receiverdetails_user_id" class="java.lang.Integer"/>
+	<field name="user_receiverdetails_Email_Id" class="java.lang.String"/>
+	<field name="user_receiverdetails_Receiver_Name" class="java.lang.String"/>
+	<field name="user_receiverdetails_Receiver_Email" class="java.lang.String"/>
+	<field name="user_receiverdetails_phone_No" class="java.lang.Long"/>
+	<field name="user_receiverdetails_Address" class="java.lang.String"/>
+	<field name="user_receiverdetails_City" class="java.lang.String"/>
+	<field name="user_receiverdetails_Pin_code" class="java.lang.Long"/>
+	<group name="user_receiverdetails_r_id">
+		<groupExpression><![CDATA[$F{user_receiverdetails_r_id}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="255" y="26" width="197" height="53" uuid="8071cf6f-b8c3-4f73-8952-bc4fdf7ca374"/>
+				<textElement>
+					<font size="24" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[receiverdetails]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<line>
+				<reportElement x="0" y="6" width="813" height="1" uuid="2afd4aa9-c4c0-4fd1-894f-f4eaf27c1e3b"/>
+			</line>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="89" height="20" uuid="dac1d881-5916-46ce-89ff-15117280e0b6"/>
+				<text><![CDATA[Id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="89" y="0" width="89" height="20" uuid="33eca577-8657-405f-8c09-1db79470d342"/>
+				<text><![CDATA[User Id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="178" y="0" width="89" height="20" uuid="d8469c27-6848-4f4c-98af-a64d15fef488"/>
+				<text><![CDATA[Email Id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="267" y="0" width="89" height="20" uuid="d1ba367f-8b61-4fce-869f-d397f78feee3"/>
+				<text><![CDATA[Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="356" y="0" width="89" height="20" uuid="811b3ce5-146e-4fc1-a9d0-63c116d07bfa"/>
+				<text><![CDATA[Email]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="445" y="0" width="89" height="20" uuid="5eaee321-f3ab-4716-8521-cfd90a5d8d7b"/>
+				<text><![CDATA[Phone No]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="534" y="0" width="89" height="20" uuid="db5957f2-461a-4f44-b457-7b30e48aad2d"/>
+				<text><![CDATA[Address]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="623" y="0" width="89" height="20" uuid="21e3e27b-8563-4804-bdb0-542e12c3fd71"/>
+				<text><![CDATA[City]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="712" y="0" width="89" height="20" uuid="9477d1af-f564-45dc-886c-bdaa3badab5d"/>
+				<text><![CDATA[Pin Code]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="26" width="783" height="1" uuid="755d7a8f-dae4-4311-b21c-5bd33269c70c"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="52" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="89" height="20" uuid="e66dd902-f9b9-4c9d-8d9c-5bb9151f6e02"/>
+				<textFieldExpression><![CDATA[$F{user_receiverdetails_r_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="89" y="0" width="89" height="20" uuid="03f281a9-21da-4aa3-a307-c5f5eacf7f81"/>
+				<textFieldExpression><![CDATA[$F{user_receiverdetails_user_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="178" y="0" width="89" height="20" uuid="ffa6e513-bb9a-4b98-b01b-8c67426863c1"/>
+				<textFieldExpression><![CDATA[$F{user_receiverdetails_Email_Id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="267" y="0" width="89" height="20" uuid="2162e7d6-6fe1-4422-9f9a-1867f90b138b"/>
+				<textFieldExpression><![CDATA[$F{user_receiverdetails_Receiver_Name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="356" y="0" width="89" height="20" uuid="c9ae7c1e-a755-4b7d-a74e-b0a37537a47e"/>
+				<textFieldExpression><![CDATA[$F{user_receiverdetails_Receiver_Email}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="445" y="0" width="89" height="20" uuid="901f298f-cf7b-4a52-888e-21aaa880c028"/>
+				<textFieldExpression><![CDATA[$F{user_receiverdetails_phone_No}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="534" y="0" width="89" height="20" uuid="226032bb-fe62-4c82-a49e-5f85aa1df3f9"/>
+				<textFieldExpression><![CDATA[$F{user_receiverdetails_Address}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="623" y="0" width="89" height="20" uuid="ceca63d3-6c7c-4dd5-afd4-7654b4be6f1f"/>
+				<textFieldExpression><![CDATA[$F{user_receiverdetails_City}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="712" y="0" width="89" height="20" uuid="42ad93f3-d2d0-46c3-8925-ddc9434fdcc1"/>
+				<textFieldExpression><![CDATA[$F{user_receiverdetails_Pin_code}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

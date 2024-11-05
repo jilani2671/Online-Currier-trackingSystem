@@ -1,0 +1,61 @@
+/* 
+    Document   : receiverdetails
+    Created on : 27 Jan, 2023, 7:32:23 PM
+    Author     : vaishnavi
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+ body
+{
+    background-image: url(images/re1.jpg);
+    background-size: 220%;
+    background-repeat: no-repeat;
+    margin-left:  100px;
+}
+
+
+.whitediv
+{
+    height: 700px;
+    width: 500px;
+    background-color: whitesmoke;
+    margin-left: 250px;
+    margin-top: 40px;
+    border-radius: 30px;
+    outline: 2px solid;
+    
+}
+
+.textbox
+{
+    height: 40px;
+    width: 200px;
+    margin-left: 40px;
+    margin-top: 30px;
+     border-radius: 10px;
+     border-right-color: navy;
+}
+
+.button
+{
+    height: 40px;
+    width: 180px;
+    margin-top: 40px;
+    margin-left: 150px;
+    background-color:  deeppink;
+    color: white;
+    border-radius: 10px;
+    border: none;
+}
+ 
+
+.lab
+{
+    font-size: 20px;
+    margin-top: 30px;
+}

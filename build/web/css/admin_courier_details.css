@@ -1,0 +1,65 @@
+/* 
+    Document   : admin_courier_details
+    Created on : 5 Mar, 2023, 11:10:01 AM
+    Author     : vaishnavi
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+body
+{
+    background-image: url(images/33.jpg);
+    background-repeat: no-repeat;
+    background-size: 1500px;
+     background-position: center;
+   }
+
+.whitediv
+            {
+                
+    height: 580px;
+    width: 800px;
+    background-color:transparent ;
+    margin-top: 40px;
+    margin-left: 100px;
+    outline: 5px solid;
+            }
+             
+ 
+            
+            .lab{
+                font-size: 18px;
+            }
+            
+            .textbox{
+                height: 30px;
+                width: 180px;
+                margin-left: -40px;
+      
+            }
+            
+            .h{
+                font-size: 23px;
+            }
+           
+          .button
+{
+    height: 50px;
+    width: 150px;
+    margin-left: 500px;
+    margin-top: -38px;
+    background-color: orange;   
+    color: black;
+    border-width: 7px;
+    border-color: blue;
+}
+
+.h1{
+    font-size: 30px;
+    margin-left: -50px;
+    font-style: italic;
+}

@@ -1,0 +1,68 @@
+/* 
+    Document   : admin_signup
+    Created on : 28 Feb, 2023, 9:29:29 AM
+    Author     : vaishnavi
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+body
+{
+    
+    background-image: url(images/admin.jpg);
+    background-repeat: no-repeat;
+    background-size: 1280px; 
+}
+
+.whitediv
+{
+    height: 570px;
+    width: 500px;
+    background-color:  transparent;
+    margin-left: 50px;
+    margin-top: 40px;
+    outline: 2px solid;
+    
+}
+
+.textbox
+{
+    height: 40px;
+    width: 200px;
+    margin-left: 40px;
+    margin-top: 20px;
+    border-color: black;
+    border-radius: 10px;
+     
+}
+
+
+.button
+{
+    height: 50px;
+    width: 60%;
+    margin-left: 90px;
+    margin-top: 10%;
+    background-color: lightpink;   
+    color: black;
+    border-width: 7px;
+    border-color: blue;
+}
+
+ 
+.lab
+{
+    font-size: 20px;
+    margin-top: 30px;
+    color: black;
+    padding-left: -100px;
+}
+label
+{
+    font-size: 40px;
+    color: red;
+}

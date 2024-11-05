@@ -1,0 +1,59 @@
+/* 
+    Document   : addresspage
+    Created on : 29 Jan, 2023, 3:03:09 PM
+    Author     : vaishnavi
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+ 
+ 
+body
+{
+    background-image: url(images/33.jpg);
+    background-repeat: no-repeat;
+    background-size: 1300px;
+ }
+
+
+.whitediv
+{
+    height: 600px;
+    width: 500px;
+    background-color: transparent;
+    margin-left: 200px;
+    margin-top: 40px;
+    outline: 5px solid;
+}
+
+.textbox
+{
+    height: 40px;
+    width: 220px;
+    margin-left: 40px;
+    margin-top: 20px;
+     
+}
+
+
+.button
+{
+    height: 50px;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 10%;
+    border: none;
+    background-color: orange;   
+    color: white;
+}
+
+ 
+
+.lab
+{
+    font-size: 20px;
+    margin-top: 30px;
+}

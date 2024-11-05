@@ -1,0 +1,62 @@
+/* 
+    Document   : branchlogin
+    Created on : 27 Jan, 2023, 7:37:55 PM
+    Author     : vaishnavi
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+ body
+{
+    background-image: url(images/26.jpg);
+    background-repeat: no-repeat;
+    background-size: 1200px;
+ }
+
+
+.whitediv
+{
+    height: 400px;
+    width: 40%;
+    background-color: transparent ;
+    border-radius: 40px;
+    margin-left: 50px;
+    margin-top: 40px;
+    
+}
+ 
+
+.textbox
+{
+    height: 40px;
+    width: 200px;
+    margin-left: 40px;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: #f2dede;
+     
+}
+
+
+.button
+{
+    height: 50px;
+    width: 40%;
+    margin-left: 90px;
+    margin-top: 10%;
+    background-color: orange;   
+    color: black;
+    border-width: 7px;
+    border-color: blue;
+}
+
+ 
+.lab
+{
+    font-size: 20px;
+    margin-top: 30px;
+}  

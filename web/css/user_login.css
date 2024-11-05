@@ -1,0 +1,67 @@
+/* 
+    Document   : user_login
+    Created on : 25 Jan, 2023, 10:27:08 AM
+    Author     : vaishnavi
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+ 
+body{
+ 
+   
+    
+}
+
+  
+.whitediv
+{
+    height: 550px;
+    width: 80%;
+   
+    margin-left: 10px;
+    margin-top: 2%;
+   
+    height: 500px;
+    width: 1100px;
+    }
+.h
+{
+    font-size: 15px;
+    margin-left: 200px;
+    margin-top: 0.2px;
+    color: blue;
+    
+}
+.box
+{
+    height: 450px;
+    width: 400px;
+    color: black;
+    background-color:  whitesmoke;
+    margin-top: 50px;
+    margin-left: 800px;
+    opacity: 50%;
+}
+.textbox
+{
+    height: 40px;
+    width: 250px;
+    border-radius: 10px;
+    margin-left: 40px;
+    margin-top: 40px;
+}
+.button
+{
+    height: 50px;
+    width: 80%;
+    margin-left: 50px;
+    margin-top: 10%;
+    background-color: orange;   
+    color: black;
+    border-width: 7px;
+    border-color: blue;
+}

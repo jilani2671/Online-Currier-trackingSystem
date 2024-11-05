@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="courierinformation" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="6408bbde-e6fd-4166-8027-079ad490885c">
+	<property name="ireport.zoom" value="2.1435888100000016"/>
+	<property name="ireport.x" value="697"/>
+	<property name="ireport.y" value="0"/>
+	<queryString language="SQL">
+		<![CDATA[SELECT
+     user_courierinformation.`ci_id` AS user_courierinformation_ci_id,
+     user_courierinformation.`user_id` AS user_courierinformation_user_id,
+     user_courierinformation.`Email_ID` AS user_courierinformation_Email_ID,
+     user_courierinformation.`Consignment_No` AS user_courierinformation_Consignment_No,
+     user_courierinformation.`Booking_Date` AS user_courierinformation_Booking_Date,
+     user_courierinformation.`Booking_Mode` AS user_courierinformation_Booking_Mode,
+     user_courierinformation.`Weight` AS user_courierinformation_Weight,
+     user_courierinformation.`Quantity` AS user_courierinformation_Quantity,
+     user_courierinformation.`Parcel_Type` AS user_courierinformation_Parcel_Type,
+     user_courierinformation.`Price` AS user_courierinformation_Price,
+     user_courierinformation.`status` AS user_courierinformation_status
+FROM
+     `user_courierinformation` user_courierinformation]]>
+	</queryString>
+	<field name="user_courierinformation_ci_id" class="java.lang.Integer"/>
+	<field name="user_courierinformation_user_id" class="java.lang.Integer"/>
+	<field name="user_courierinformation_Email_ID" class="java.lang.String"/>
+	<field name="user_courierinformation_Consignment_No" class="java.lang.String"/>
+	<field name="user_courierinformation_Booking_Date" class="java.lang.String"/>
+	<field name="user_courierinformation_Booking_Mode" class="java.lang.String"/>
+	<field name="user_courierinformation_Weight" class="java.lang.String"/>
+	<field name="user_courierinformation_Quantity" class="java.lang.Long"/>
+	<field name="user_courierinformation_Parcel_Type" class="java.lang.String"/>
+	<field name="user_courierinformation_Price" class="java.lang.String"/>
+	<field name="user_courierinformation_status" class="java.lang.String"/>
+	<group name="user_courierinformation_ci_id">
+		<groupExpression><![CDATA[$F{user_courierinformation_ci_id}]]></groupExpression>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="288" y="19" width="251" height="35" uuid="207dda28-924d-4396-94f2-a33a7a816bbd"/>
+				<textElement>
+					<font size="26" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Courierinformation ]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<line>
+				<reportElement x="0" y="12" width="802" height="1" uuid="fa8ae343-bbf5-439c-8aba-c7faa26a40b6"/>
+			</line>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="49" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="72" height="20" uuid="8d503e26-413a-4273-8ed7-bb638dd9145a"/>
+				<textElement>
+					<font size="12" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="72" y="0" width="72" height="20" uuid="b28d5180-0655-4093-aa94-8db0c94588b4"/>
+				<textElement>
+					<font size="12" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[User Id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="144" y="0" width="72" height="20" uuid="c5bd2e0a-d917-471d-b918-362a4686b210"/>
+				<textElement>
+					<font size="12" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Email Id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="216" y="0" width="72" height="20" uuid="ce27ecb0-ab75-4da5-9393-04e97451007b"/>
+				<textElement>
+					<font size="12" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Consignment_No]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="288" y="0" width="72" height="20" uuid="4071a3f9-a9fc-418b-b922-6d2f7b752287"/>
+				<textElement>
+					<font size="12" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Booking Date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="360" y="0" width="72" height="20" uuid="635e343f-638d-46c3-a8ef-1c3d8a0787e8"/>
+				<textElement>
+					<font size="12" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Booking Mode]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="432" y="0" width="72" height="20" uuid="f84dd608-e887-4bef-be46-81a35210909c"/>
+				<textElement>
+					<font size="12" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Weight]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="504" y="0" width="72" height="20" uuid="92b91771-1a18-4c84-b455-ead04cdbce69"/>
+				<textElement>
+					<font size="12" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Quantity]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="576" y="0" width="72" height="20" uuid="450b2088-0990-45f8-b0fb-445006141166"/>
+				<textElement>
+					<font size="12" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Parcel Type]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="648" y="0" width="72" height="20" uuid="ea1203cd-c4ea-407b-8f85-ed2b6d75002a"/>
+				<textElement>
+					<font size="12" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[Price]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="720" y="0" width="72" height="20" uuid="1dcd0e86-21d9-47e5-8eb7-945ac6daedc9"/>
+				<textElement>
+					<font size="12" isBold="true" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[status]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="25" width="802" height="1" uuid="300e3010-4942-4c3d-890d-b47b02727d96"/>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="64" splitType="Stretch">
+			<textField>
+				<reportElement x="0" y="0" width="72" height="20" uuid="94a2f209-ccba-4de1-ae7a-13443f6020ce"/>
+				<textFieldExpression><![CDATA[$F{user_courierinformation_ci_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="90" y="0" width="72" height="20" uuid="ef91acdc-edf9-4844-99ea-4fc5f9e107d5"/>
+				<textFieldExpression><![CDATA[$F{user_courierinformation_user_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="144" y="0" width="72" height="20" uuid="1acc04c8-4479-495d-b5a2-b96668f72bbb"/>
+				<textFieldExpression><![CDATA[$F{user_courierinformation_Email_ID}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="216" y="0" width="72" height="20" uuid="33383d86-55fd-41f1-8996-441c0c09ee02"/>
+				<textFieldExpression><![CDATA[$F{user_courierinformation_Consignment_No}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="288" y="0" width="72" height="20" uuid="ca69e007-fd88-4f0b-af7b-2020ad0763be"/>
+				<textFieldExpression><![CDATA[$F{user_courierinformation_Booking_Date}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="360" y="0" width="72" height="20" uuid="41b5d017-cdc8-41d1-a616-ffe2ab230904"/>
+				<textFieldExpression><![CDATA[$F{user_courierinformation_Booking_Mode}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="432" y="0" width="72" height="20" uuid="10f70442-edf7-4e69-aa0e-66f4f0386b4b"/>
+				<textFieldExpression><![CDATA[$F{user_courierinformation_Weight}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="504" y="0" width="72" height="20" uuid="05630b48-aebf-4921-89d9-f08e3fe5ab05"/>
+				<textFieldExpression><![CDATA[$F{user_courierinformation_Quantity}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="576" y="0" width="72" height="20" uuid="f278cb40-be20-4cad-99f1-ec1170303ad1"/>
+				<textFieldExpression><![CDATA[$F{user_courierinformation_Parcel_Type}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="648" y="0" width="72" height="20" uuid="e776237e-dd52-4571-aec9-2c6fb491502d"/>
+				<textFieldExpression><![CDATA[$F{user_courierinformation_Price}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="720" y="0" width="72" height="20" uuid="18b77130-6f2a-4bfa-8697-6d36ea30a50d"/>
+				<textFieldExpression><![CDATA[$F{user_courierinformation_status}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="21" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="22" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="25" splitType="Stretch"/>
+	</summary>
+</jasperReport>

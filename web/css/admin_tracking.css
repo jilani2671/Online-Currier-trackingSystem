@@ -1,0 +1,56 @@
+/* 
+    Document   : admin_tracking
+    Created on : 5 Mar, 2023, 8:39:43 PM
+    Author     : vaishnavi
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+body{
+    background-image: url("image/admin.jpg");
+    background-repeat: no-repeat;
+    background-size: 1200px;
+}
+.whitediv{
+    height: 400px;
+    width: 500px;
+    margin-left: 200PX;
+    margin-top: 40px;
+    background-color: lightsteelblue;
+    border-radius: 20px;
+}
+.lab{
+    font-size: 20px;
+}
+.h2{
+    margin-left: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+.h{
+    font-size: 30px;
+ 
+}
+
+.h3{
+    margin-left: 20px;
+    text-align: center;
+    size: 15px;
+}
+
+
+.button
+{
+    height: 50px;
+    width: 40%;
+    margin-left: 150px;
+    margin-top: 10%;
+    background-color: orange;   
+    color: black;
+    border-width: 7px;
+    border-color: blue;
+}

@@ -1,0 +1,62 @@
+/* 
+    Document   : feedbak
+    Created on : 29 Jan, 2023, 3:00:39 PM
+    Author     : vaishnavi
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+
+ body
+{
+     background-image: url(images/37.jpg);
+    background-repeat: no-repeat;
+    background-size: 1400px;
+     background-position: center;
+}
+
+
+ 
+.whitediv
+{
+    height: 500px;
+    width: 500px;
+    background-color:  transparent;
+     margin-left: 100px;
+    margin-top: 40px;
+     outline: 5px solid;
+}
+
+
+.textbox
+{
+    height: 40px;
+    width: 200px;
+    margin-left: 40px;
+    margin-top: 30px;
+     
+}
+
+
+.button
+{
+    height: 50px;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 15%;
+    border: none;
+    background-color: orange;  
+    border-radius: 10px;
+    color: white;
+}
+
+
+
+.lab
+{
+    font-size: 20px;
+    margin-top: 30px;
+}

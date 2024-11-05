@@ -1,0 +1,26 @@
+SMAP
+user_005fcourierinformation_jsp.java
+JSP
+*S JSP
+*F
++ 0 user_courierinformation.jsp
+user_courierinformation.jsp
++ 1 user_navbar.jsp
+user_navbar.jsp
++ 2 user_navbar.css
+css/user_navbar.css
++ 3 user_courierinformation.css
+css/user_courierinformation.css
+*L
+5,8:55
+5#1,10:62
+1#2,171:72
+14#1,23:242
+12#0,8:264
+1#3,65:272
+19#0,50:337
+69,14:388
+82,7:402
+89,2:409,3
+91,74:415
+*E
